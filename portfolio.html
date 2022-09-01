@@ -20,7 +20,13 @@
       rel="stylesheet"
     />
     <!--Modern normalize styles-->
-    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!--Styles-->
     <link rel="stylesheet" href="./css/styles.css" />
     <!--Title-->
@@ -29,8 +35,8 @@
 
   <body>
     <!--Header-->
-    <div class="container">
-      <header class="header">
+    <header class="header">
+      <div class="container header-container">
         <a class="logo" href="./index.html"> Web<span class="dark-text">Studio</span> </a>
         <nav class="header-navigation">
           <ul class="header-navigation-list">
@@ -53,14 +59,14 @@
             <a class="header-contacts-link" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
-      </header>
-    </div>
+      </div>
+    </header>
 
     <!--Main information-->
     <main>
       <!-- Portfolio -->
-      <div class="container">
-        <section class="portfolio section">
+      <section class="portfolio section">
+        <div class="container">
           <h1 hidden class="portfolio-title">Портфоліо</h1>
           <!-- filters -->
           <h2 hidden class="filters-title">Фільтри</h2>
@@ -203,13 +209,13 @@
               </div>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
 
     <!--Footer-->
-    <div class="container">
-      <footer class="footer" id="footer">
+    <footer class="footer" id="footer">
+      <div class="container footer-container">
         <a class="logo footer-logo" href="./index.html">
           Web<span class="light-text">Studio</span>
         </a>
@@ -224,7 +230,7 @@
             </li>
           </ul>
         </address>
-      </footer>
-    </div>
+      </div>
+    </footer>
   </body>
 </html>
