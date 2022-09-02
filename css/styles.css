@@ -104,12 +104,13 @@ p {
 /* Header */
 .header {
   border-bottom: 1px solid #ececec;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .header-container {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  align-items: center;
 }
 
 .logo {
@@ -215,6 +216,10 @@ p {
 }
 
 /* Activity */
+activity {
+  padding-top: 0;
+}
+
 .activity-title,
 .team-title {
   font-weight: 700;
@@ -281,9 +286,6 @@ p {
 /* Footer */
 .footer {
   background-color: var(--main-bg-color);
-}
-
-.footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -349,25 +351,30 @@ p {
 .projects-grid {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 50px;
+  row-gap: 30px;
   column-gap: 30px;
 }
 
 .projects-grid-item {
-  border-bottom: 1px solid var(--main-border-color);
+  /* border-bottom: 1px solid var(--main-border-color); */
   flex-basis: calc((100% - 60px) / 3);
 }
 
 .project-img {
   display: block;
-  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .project-description {
+  padding-top: 20px;
+  padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
+
+  border-left: 1px solid var(--main-border-color);
+  border-right: 1px solid var(--main-border-color);
+  border-bottom: 1px solid var(--main-border-color);
 }
 
 .project-title {
